@@ -1,3 +1,7 @@
 body{
     height: 100%;
 }
+
+.hover-button:hover {
+    background: linear-gradient(#cccccc, #ffffff);
+}

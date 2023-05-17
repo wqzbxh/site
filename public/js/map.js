@@ -102,7 +102,6 @@ createMarker =()=>{
             "myStyle2": new TMap.MarkerStyle({
                 "width": 48,  // 点标记样式宽度（像素）
                 "height": 48, // 点标记样式高度（像素）
-                "src": '../public/image/site6.png',  //图片路径
                 //焦点在图片中的像素位置，一般大头针类似形式的图片以针尖位置做为焦点，圆形点以圆心位置为焦点
             }),
         },
@@ -110,10 +109,10 @@ createMarker =()=>{
         geometries: [ {//第二个点标记
             "id": "2",
             "styleId": 'myStyle2',
-            "title": '落魄山的日常',
+            "title": '落魄山？',
             "site_title": '哑巴湖大水怪',
-            "site_info": '网站导航页面',
-            "site_price": '3288:00',
+            "site_info": 'PHP？JAVA？WEB？',
+            "site_price": '遇事不决,可问春风,春风不语,既随本心.',
             "position": new TMap.LatLng(31.230001534076, 121.47400095893),
             "properties": {
                 "src": '../public/image/site3.png',  //图片路径

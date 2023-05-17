@@ -33,27 +33,26 @@
 <body onload="initMap()">
 {********导航*******}
     <div class=" text-center">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <h5><span class="badge badge-secondary">米粒儿大的烦恼</span></h5>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <h5><span class="badge badge-secondary  align-middle mt-1">米粒儿大的忧愁</span></h5>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <div class="spinner-grow  text-light" role="status">
+                    <span class="navbar-toggler-icon"></span>
+                </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item hover-button px-5 d-flex flex-row">
+                            <a class="nav-link" target="_blank" href="https://wp.wqzbxh.site/">哑巴湖大水怪笔记？</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">选项1</a>
+                    <li class="nav-item  hover-button px-5 d-flex flex-row">
+                        <a class="nav-link" href="http://2023.wqzbxh.site/">去看烟花？</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">选项2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">选项3</a>
+                    <li class="nav-item hover-button px-5 d-flex flex-row">
+                        <a class="nav-link " href="https://gyouth.cn/">我是驾校</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0" action="#">
+                <form class="form-inline my-2   my-lg-0" action="#">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>

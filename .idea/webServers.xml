@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8a6d7656-2722-474d-a24c-ab361d49299c" name="haiyang" url="https://wqzbxh.site/">
+        <fileTransfer rootFolder="/home/wwwroot/blog" accessType="SFTP" host="1.117.159.188" port="22" sshConfigId="6872a2fd-1636-4206-bd83-5e29a5d22517" sshConfig="root@1.117.159.188:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
