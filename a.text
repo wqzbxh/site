@@ -1,0 +1,60 @@
+*   Trying 127.0.0.1:10809...
+* TCP_NODELAY set
+* Connected to 127.0.0.1 (127.0.0.1) port 10809 (#0)
+* allocate connect buffer!
+* Establish HTTP proxy tunnel to api.openai.com:443
+> CONNECT api.openai.com:443 HTTP/1.1
+Host: api.openai.com:443
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 200 Connection established
+< 
+* Proxy replied 200 to CONNECT request
+* CONNECT phase completed!
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* CONNECT phase completed!
+* CONNECT phase completed!
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use h2
+* Server certificate:
+*  subject: C=US; ST=California; L=San Francisco; O=Cloudflare, Inc.; CN=sni.cloudflaressl.com
+*  start date: Mar 28 00:00:00 2023 GMT
+*  expire date: Mar 26 23:59:59 2024 GMT
+*  subjectAltName: host "api.openai.com" matched cert's "api.openai.com"
+*  issuer: C=US; O=Cloudflare, Inc.; CN=Cloudflare Inc ECC CA-3
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+* Using HTTP2, server supports multi-use
+* Connection state changed (HTTP/2 confirmed)
+* Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+* Using Stream ID: 1 (easy handle 0x21d669ec480)
+> POST /v1/chat/completions HTTP/2
+Host: api.openai.com
+accept: */*
+authorization: Bearer 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
+content-type: application/json
+content-length: 109
+
+* We are completely uploaded and fine
+* old SSL session ID is stale, removing
+* Connection state changed (MAX_CONCURRENT_STREAMS == 256)!
+< HTTP/2 200 
+< date: Sat, 15 Apr 2023 13:03:30 GMT
+< content-type: application/json
+< access-control-allow-origin: *
+< cache-control: no-cache, must-revalidate
+< openai-model: gpt-3.5-turbo-0301
+< openai-organization: user-8jddn7o7fdhuvm1el8fq3rno
+< openai-processing-ms: 33677
+< openai-version: 2020-10-01
+< strict-transport-security: max-age=15724800; includeSubDomains
+< x-ratelimit-limit-requests: 3
+< x-ratelimit-remaining-requests: 2
+< x-ratelimit-reset-requests: 20s
+< x-request-id: 688f2178b6aeac0519d0e7387cb04be8
+< cf-cache-status: DYNAMIC
+< server: cloudflare
+< cf-ray: 7b8462c2a80df1f8-KHH
+< alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+< 
+* Connection #0 to host 127.0.0.1 left intact
